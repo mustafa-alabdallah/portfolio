@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mostafa Alabdallah — Portfolio & Projects</title>
+  <meta name="description" content="Portfolio of Mostafa Alabdallah: robotics teacher, mechanical engineering student, maker. Projects, publications, downloads, and contact." />
+  <meta property="og:title" content="Mostafa Alabdallah — Portfolio" />
+  <meta property="og:description" content="Robotics projects, teaching materials, games, and publications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/og-image.jpg" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="./assets/favicon.png" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111735; --muted:#99a3ff; --text:#e7ecff; --accent:#7dd3fc; --pill:#1e293b; --ok:#22c55e;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:radial-gradient(1200px 600px at 80% -10%,rgba(125,211,252,.25),transparent 60%),radial-gradient(1200px 800px at -10% 120%,rgba(153,163,255,.18),transparent 60%),var(--bg);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{width:52px;height:52px;border-radius:14px;border:1px solid #2b3561}
+    .brand h1{margin:0;font-size:1.15rem;line-height:1.1}
+    .brand p{margin:2px 0 0;font-size:.9rem;color:#c7d2fe}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:999px;background:#0b1433;border:1px solid #22306b}
+    .hero{margin-top:18px;padding:28px;border:1px solid #22306b;background:linear-gradient(180deg,rgba(17,23,53,.7),rgba(11,16,32,.7));border-radius:16px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+    .hero h2{margin:0 0 10px;font-size:2rem}
+    .hero p{margin:8px 0 0;color:#cbd5e1}
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .pill{font-size:.85rem;padding:6px 10px;border-radius:999px;background:var(--pill);border:1px solid #2b3561;white-space:nowrap}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid #2b3561;background:#0b1433;color:var(--text);font-weight:600}
+    .btn.primary{background:linear-gradient(180deg,#1f2a6b,#14204f)}
+    .grid{display:grid;gap:16px}
+    @media(min-width:860px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:1fr 1fr}}
+    section{margin-top:28px}
+    .card{padding:16px;border-radius:14px;background:linear-gradient(180deg,#0f1537,#0c122b);border:1px solid #24306a}
+    .card h3{margin:0 0 8px}
+    .meta{font-size:.86rem;color:#a5b4fc}
+    .downloads a{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:12px;border:1px solid #263571;background:#0b1433;margin-top:10px}
+    .downloads small{color:#94a3b8}
+    footer{margin:40px 0 12px;color:#9aa7d1;font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#0b1433;border:1px solid #22306b;border-radius:10px;padding:10px;overflow:auto}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Mostafa Alabdallah",
+    "jobTitle":"Robotics Teacher & Mechanical Engineering Student",
+    "url":"https://example.github.io/",
+    "sameAs":[
+      "https://github.com/mustafa-alabdallah",
+      "https://www.linkedin.com/in/mostafa-alabdallah-142693269"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="./assets/avatar.jpg" alt="Mostafa avatar" />
+        <div>
+          <h1>Mostafa Alabdallah</h1>
+          <p>Robotics • Education • Maker • C#/JS • Arduino</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>From classroom to lab — building ideas that move.</h2>
+        <p>I teach robotics in Israeli schools and study Mechanical Engineering (Robotics). Here you’ll find my projects, teaching materials, and a downloadable book. Everything is 100% static so it hosts for free on GitHub Pages / Netlify.</p>
+        <div class="badges">
+          <span class="pill">Arduino • ESP32 • RC Tanks</span>
+          <span class="pill">3D Printing</span>
+          <span class="pill">C# • Python • JS</span>
+          <span class="pill">VR • App Inventor</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#downloads">Download my book (PDF)</a>
+          <a class="btn" href="#games">Play a web game</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Quick Links</h3>
+        <div class="grid cols-2">
+          <a class="btn" href="https://github.com/mustafa-alabdallah" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="mailto:mostafa@example.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/mostafa-alabdallah-142693269" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="./Mostafa_Alabdallah_CV.pdf" download>Download CV</a>
+        </div>
+        <p class="meta" style="margin-top:10px">Tip: put your <span class="code">Mostafa_Alabdallah_CV.pdf</span> file in the repo root so this link works.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Bluetooth RC Tank (Arduino)</h3>
+          <p class="meta">UNO • L298P • HC‑06 • 3W LED</p>
+          <p>Tank controlled from a phone app, with lights and sensors; great for teaching PWM and motor control.</p>
+          <p><a href="https://github.com/youruser/rc-tank" target="_blank" rel="noreferrer">Repository →</a></p>
+        </div>
+        <div class="card">
+          <h3>Sea Trash Collector Boat</h3>
+          <p class="meta">3D printed hull • ESP32</p>
+          <p>Remote-controlled catamaran that scoops floating trash. Designed with students as a community project.</p>
+          <p><a href="https://github.com/youruser/sea-boat" target="_blank" rel="noreferrer">Repository →</a></p>
+        </div>
+        <div class="card">
+          <h3>Hydroponics Garden</h3>
+          <p class="meta">pH • EC • Temp • IoT</p>
+          <p>Sensor suite with dashboard and pumps automation; used in class for control systems basics.</p>
+          <p><a href="https://github.com/youruser/hydroponics" target="_blank" rel="noreferrer">Repository →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads">
+      <h2>Downloads</h2>
+      <div class="downloads">
+        <a href="./Robotics_Journey_Book.pdf" download>
+          <div>
+            <strong>Robotics Journey — Book (PDF)</strong>
+            <div><small>v1.0 • English • 120 pages</small></div>
+          </div>
+          <span>⤓</span>
+        </a>
+        <a href="./presentations/" target="_blank" rel="noreferrer">
+          <div>
+            <strong>Teaching Presentations</strong>
+            <div><small>HTML/PPTX — open folder</small></div>
+          </div>
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="games">
+      <h2>Games (Web/Desktop)</h2>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Block Shooter</h3>
+          <p class="meta">HTML • JS • Mobile friendly</p>
+          <p>Touch to move & auto‑fire. Works on phone and PC.</p>
+          <p><a href="./games/block-shooter/index.html" target="_blank" rel="noreferrer">Play now →</a></p>
+        </div>
+        <div class="card">
+          <h3>VR Car Demo</h3>
+          <p class="meta">WebXR • A‑Frame</p>
+          <p>Drive with a VR headset; classroom demo of robotics & XR.</p>
+          <p><a href="./games/vr-car/index.html" target="_blank" rel="noreferrer">Launch →</a></p>
+        </div>
+        <div class="card">
+          <h3>Chess Trainer</h3>
+          <p class="meta">JS • Puzzles</p>
+          <p>Quick openings & tactics for students.</p>
+          <p><a href="./games/chess-trainer/index.html" target="_blank" rel="noreferrer">Try it →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:mostafa@example.com">mostafa@example.com</a></p>
+        <p>Location: Jaffa, Israel • Languages: Arabic, Hebrew, English, German (native), basic Russian</p>
+        <p class="meta">To add a contact form without a backend, embed a Google Form or use a service like Formspree (free tier).</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>How this site is hosted (free)</h2>
+      <div class="card">
+        <ol>
+          <li>Create a free GitHub account & new public repo, e.g., <span class="code">portfolio</span>.</li>
+          <li>Add this <span class="code">index.html</span> file at the repo root. Create folders like <span class="code">/assets</span>, <span class="code">/games</span>, <span class="code">/presentations</span>, and upload your files.</li>
+          <li>In the repo: Settings → Pages → Build from <strong>Deploy from a branch</strong>, select <strong>main</strong> and <strong>/ (root)</strong>. Save.</li>
+          <li>Your site will be live at <span class="code">https://&lt;your-user&gt;.github.io/portfolio/</span>. Optional: add a custom domain in Pages.</li>
+        </ol>
+        <p class="meta">Alternative free hosts: Cloudflare Pages, Netlify, Vercel — all work with static sites (no server needed).</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Mostafa Alabdallah</span>
+      <span>Made with pure HTML/CSS. No frameworks, no fees.</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
